@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { Cpu } from 'lucide-react';
 
@@ -16,16 +17,18 @@ const Marquee = () => (
       {[...techTags, ...techTags].map((tag, i) => (
         <span key={i} style={{
           fontFamily: 'var(--font-display)',
-          fontWeight: 600,
-          fontSize: '0.85rem',
-          color: 'var(--text-muted)',
-          letterSpacing: '0.1em',
+          fontWeight: 800,
+          fontSize: '1.25rem',
+          color: 'var(--text-primary)',
+          letterSpacing: '0.2em',
+          textTransform: 'uppercase',
           whiteSpace: 'nowrap',
           display: 'flex',
           alignItems: 'center',
-          gap: '1rem',
+          gap: '1.5rem',
+          textShadow: '0 0 15px rgba(168, 255, 0, 0.25)',
         }}>
-          <span className="dot-indicator" />
+          <span className="dot-indicator" style={{ width: 8, height: 8 }} />
           {tag}
         </span>
       ))}
@@ -57,6 +60,10 @@ function App() {
           <Marquee />
 
           <Services />
+
+          <div className="divider" />
+
+          <Projects />
 
           <div className="divider" />
 

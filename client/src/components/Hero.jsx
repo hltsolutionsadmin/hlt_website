@@ -94,7 +94,7 @@ const Hero = () => {
         >
           <div className="badge">
             <span className="dot-indicator" />
-            New AI Automation Platform
+            Premier IT Services & Solutions
           </div>
         </motion.div>
 
@@ -114,11 +114,11 @@ const Hero = () => {
             textShadow: '0 0 50px rgba(0, 0, 0, 0.8), 0 0 100px rgba(168, 255, 0, 0.15)',
           }}
         >
-          Unlock the <span className="gradient-text">Power</span>
+          Building <span className="gradient-text">Excellence</span>
           <br />
-          of AI for Your
+          Through Digital
           <br />
-          <span style={{ fontStyle: 'italic', color: 'var(--text-secondary)' }}>Business.</span>
+          <span style={{ fontStyle: 'italic', color: 'var(--text-secondary)' }}>Innovation.</span>
         </motion.h1>
 
         {/* Sub */}
@@ -139,8 +139,8 @@ const Hero = () => {
             border: '1px solid rgba(168, 255, 0, 0.1)',
           }}
         >
-          Our cutting-edge platform automates, analyzes, and accelerates your
-          workflows so you can focus on what really matters.
+          We engineer custom software, web applications, and mobile solutions 
+          that drive growth and scalability for your business.
         </motion.p>
 
         {/* CTAs */}

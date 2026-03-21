@@ -349,16 +349,16 @@ h1, h2, h3, h4, h5, .display {
 /* ========================= MARQUEE ========================= */
 .marquee-wrapper {
   overflow: hidden;
-  border-top: 1px solid var(--glass-border-subtle);
-  border-bottom: 1px solid var(--glass-border-subtle);
-  background: linear-gradient(to right, var(--bg-void), rgba(168, 255, 0, 0.025), var(--bg-void));
+  border-top: 1px solid var(--glass-border-mid);
+  border-bottom: 1px solid var(--glass-border-mid);
+  background: linear-gradient(to right, var(--bg-void), rgba(168, 255, 0, 0.08), var(--bg-void));
 }
 
 .marquee-track {
   display: flex;
-  gap: 4rem;
-  padding: 1.2rem 0;
-  animation: marquee 20s linear infinite;
+  gap: 5rem;
+  padding: 2.5rem 0;
+  animation: marquee 30s linear infinite;
   width: max-content;
 }
 

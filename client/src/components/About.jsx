@@ -8,7 +8,7 @@ const highlights = [
   'Cloud-first architecture mindset',
   'Dedicated post-launch support',
   'Security & compliance by default',
-  'AI & automation integration',
+  'Custom Software Development',
 ];
 
 const About = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Cloud, Zap, Shield, Database, Share2 } from 'lucide-react';
+import { Code, Cloud, Smartphone, Shield, Database, Share2 } from 'lucide-react';
 
 const services = [
   {
@@ -20,9 +20,9 @@ const services = [
     tag: '02',
   },
   {
-    icon: Zap,
-    title: 'AI Solutions',
-    desc: 'Intelligent automation, ML models, and AI pipelines that outperform and evolve with your needs.',
+    icon: Smartphone,
+    title: 'Mobile Development',
+    desc: 'High-performance iOS and Android applications crafted for exceptional user experience and engagement.',
     colorClass: 'icon-box-violet',
     color: '#8b5cf6',
     tag: '03',
