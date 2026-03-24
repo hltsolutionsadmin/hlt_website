@@ -6,7 +6,8 @@ import Services from './components/Services';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import { Cpu } from 'lucide-react';
+
+import logo from './assets/logo.png';
 
 // Tech Marquee
 const techTags = ['React', 'Node.js', 'MongoDB', 'AWS', 'AI / ML', 'TypeScript', 'Docker', 'Next.js', 'Python', 'Redis', 'GraphQL', 'Kubernetes'];
@@ -89,16 +90,21 @@ function App() {
             gap: '1.5rem',
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-              <div style={{
-                width: 36, height: 36,
-                background: 'rgba(168, 255, 0, 0.08)',
-                border: '1px solid rgba(168, 255, 0, 0.2)',
-                borderRadius: 8,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
+              <img 
+                src={logo} 
+                alt="HLT Solutions Logo" 
+                style={{ 
+                  height: '32px', 
+                  width: 'auto',
+                  display: 'block'
+                }} 
+              />
+              <span style={{ 
+                fontFamily: 'var(--font-display)', 
+                fontWeight: 700, 
+                fontSize: '1.05rem',
+                color: 'white'
               }}>
-                <Cpu size={18} color="var(--lime)" />
-              </div>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '0.95rem' }}>
                 HLT SOLUTIONS
               </span>
             </div>

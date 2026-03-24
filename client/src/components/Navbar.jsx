@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Cpu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -9,6 +9,8 @@ const links = [
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ];
+
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -42,24 +44,37 @@ const Navbar = () => {
         <motion.div
           whileHover={{ scale: 1.04 }}
           style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer' }}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <div style={{
-            width: 40, height: 40,
-            background: 'rgba(0, 212, 255, 0.08)',
-            border: '1px solid rgba(0, 212, 255, 0.25)',
-            borderRadius: 10,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 0 16px rgba(0, 212, 255, 0.15)',
-          }}>
-            <Cpu size={22} color="#00d4ff" />
-          </div>
-          <div>
-            <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1rem', letterSpacing: '-0.01em' }}>
+          <img 
+            src={logo} 
+            alt="HLT Solutions" 
+            style={{ 
+              height: '42px', 
+              width: 'auto',
+              display: 'block'
+            }} 
+          />
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ 
+              fontFamily: 'var(--font-display)', 
+              fontWeight: 800, 
+              fontSize: '1.1rem', 
+              letterSpacing: '-0.01em',
+              color: 'white'
+            }}>
               HLT SOLUTIONS
-            </div>
-            <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', letterSpacing: '0.15em' }}>
-              HI-TECH IT
-            </div>
+            </span>
+            <span style={{ 
+              fontSize: '0.6rem', 
+              color: 'var(--accent)', 
+              letterSpacing: '0.15em',
+              opacity: 0.8,
+              fontWeight: 600,
+              textTransform: 'uppercase'
+            }}>
+              Hi-Tech IT Services
+            </span>
           </div>
         </motion.div>
 
