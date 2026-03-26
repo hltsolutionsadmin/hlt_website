@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 import logo from './assets/logo.png';
 
-// Tech Marquee
+
 const techTags = ['React', 'Node.js', 'MongoDB', 'AWS', 'AI / ML', 'TypeScript', 'Docker', 'Next.js', 'Python', 'Redis', 'GraphQL', 'Kubernetes'];
 
 const Marquee = () => (
