@@ -35,7 +35,7 @@ const Contact = () => {
             style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}
           >
             {[
-              { icon: Mail, label: 'Email', val: 'HarishPeela@Havelifesolutions.onmicrosoft.com ', color: '#00d4ff' },
+              { icon: Mail, label: 'Email', val: 'info.hlt@Havelifesolutions.onmicrosoft.com ', color: '#00d4ff' },
               { icon: Phone, label: 'Phone', val: '+91 970507662', color: '#8b5cf6' },
               { icon: MapPin, label: 'Location', val: 'Global Services', color: '#14b8a6' },
             ].map((item, i) => (
