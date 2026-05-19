@@ -105,12 +105,12 @@ function App() {
                 fontSize: '1.05rem',
                 color: 'white'
               }}>
-                HLT SOLUTIONS
+                Have Life Tech Solutions Private Limited
               </span>
             </div>
 
             <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>
-              © 2026 HLT Solutions · All rights reserved.
+              © 2026 Have Life Tech Solutions Private Limited · All rights reserved.
             </p>
 
             <div style={{ display: 'flex', gap: '2rem' }}>
