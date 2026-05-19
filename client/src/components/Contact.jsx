@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, ArrowRight } from 'lucide-react';
 
 const Contact = () => {
+  console.log('Rendering Contact component');
   return (
     <section id="contact" className="section" style={{ position: 'relative' }}>
       <div className="glow-orb glow-cyan" style={{ width: '50vw', height: '50vw', top: '10%', right: '-10%' }} />
