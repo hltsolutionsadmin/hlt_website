@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, ArrowRight } from 'lucide-react';
 
 const Contact = () => {
+  console.log('Rendering Contact component');
   return (
     <section id="contact" className="section" style={{ position: 'relative' }}>
       <div className="glow-orb glow-cyan" style={{ width: '50vw', height: '50vw', top: '10%', right: '-10%' }} />
@@ -36,7 +37,7 @@ const Contact = () => {
           >
             {[
               { icon: Mail, label: 'Email', val: 'info.hlt@Havelifesolutions.onmicrosoft.com ', color: '#00d4ff' },
-              { icon: Phone, label: 'Phone', val: '+91 970507662', color: '#8b5cf6' },
+              { icon: Phone, label: 'Phone', val: '+91 9705047662', color: '#8b5cf6' },
               { icon: MapPin, label: 'Location', val: 'Global Services', color: '#14b8a6' },
             ].map((item, i) => (
               <motion.div
